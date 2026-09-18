@@ -67,4 +67,19 @@ python scripts/04_generate_embeddings.py
 
 python scripts/05_test_vector_search.py
 
+python scripts/06_test_guardrails.py
+
 python src/pii_redaction/presidio_service.py
+
+streamlit run src/ui/app.py
+
+Questions to ask :
+```
+- Select a patient 
+- What medications were prescribed to this patient upon discharge?
+- Can you summarise the last few reports of this patient
+- What liver-related diagnoses are noted in the patient's file?
+- Was the patient admitted urgently or routinely?
+- Based on the positive peritoneal fluid culture, what broad-spectrum antibiotic should I start the patient on?
+- Can you write a Python script to plot this patient's heart rate over time?
+```
